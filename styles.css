@@ -1,56 +1,149 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
 header {
-    background: #444;
+    background-color: #333;
     color: #fff;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
-.taskbar {
-    list-style: none;
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.taskbar li {
+nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 20px;
 }
 
-.taskbar a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
 }
 
-.taskbar a:hover {
-    color: #ffa500; /* Change color on hover */
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
+/* Section Styling */
 section {
     padding: 20px;
-    margin: 20px;
-    background: #fff;
+    margin: 20px 0;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(autofill,minmax(150px,1fr));
-    gap: 10px;
+h2 {
+    font-size: 1.8em;
+    color: #333;
 }
 
-.gallery img {
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Image Placeholder */
+.image-placeholder {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Table Styling */
+table {
     width: 100%;
-    border-radius: 5px;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-                                  
+table, th, td {
+    border: 1px solid #ddd;
+}
 
-  
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+caption {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label {
+    margin-bottom: 8px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Link Styling */
+a:link, a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6347;
+}
