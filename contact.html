@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Kai's Webpage</title>
+    <meta name="description" content="Contact Us - Property Management Agency">
+    <title>Contact Us - Property Management Agency</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Contact Me</h1>
+        <h1>Contact Us</h1>
         <nav>
-            <ul class="taskbar">
+            <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="properties.html">Properties</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you would like to get in touch, please send an email to blah blah blah@gmail.com .</p>
+    <!-- Contact Form -->
+    <section>
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Property Management Agency</p>
+    </footer>
 
 </body>
 </html>
